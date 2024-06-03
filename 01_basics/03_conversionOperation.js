@@ -1,16 +1,16 @@
 let score = 35;
-console.log(typeof score, ">>> score data type");
+console.log(typeof score, ">>> score data type"); //number
 
 score = "33";
-console.log(typeof score, ">>> reassigned score data type");
+console.log(typeof score, ">>> reassigned score data type"); // string
 
 
 let valueNumber = Number(score);
-console.log(typeof valueNumber, ">>> valueNumber i.e; score data type when score in Number");
+console.log(typeof valueNumber, ">>> valueNumber i.e; score data type when score in Number"); // number
 
 score = "33abc";
 valueNumber = Number(score);
-console.log(typeof valueNumber, ">>> valueNumber i.e; score data type when score is 33abc and in Number");
+console.log(typeof valueNumber, ">>> valueNumber i.e; score data type when score is 33abc and in Number"); // number
 console.log(valueNumber, ">>>> valueNumber when score is 33abc and in Number"); // NaN
 console.log(typeof NaN, ">>> type of NaN") // number
 
@@ -36,11 +36,11 @@ console.log(valNumber3, ">> valNumber3 value") // NaN
 
 let score4 = "Vishal";
 
-console.log(typeof score4, ">>> type of score4");
+console.log(typeof score4, ">>> type of score4"); // string
 
 let valNumber4 = Number(score4);
-console.log(typeof valNumber4, ">>> type of valNumber4");
-console.log(valNumber4, ">>> valNumber4 value");
+console.log(typeof valNumber4, ">>> type of valNumber4"); // number
+console.log(valNumber4, ">>> valNumber4 value"); // NaN
 
 
 
