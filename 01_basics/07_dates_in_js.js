@@ -26,3 +26,23 @@ console.log(myCreatedDateCustomFormat.toLocaleString()); // 1/20/2024, 12:00:00 
 
 let myCreatedDateCustomFormat2 = new Date("01-20-2024");
 console.log(myCreatedDateCustomFormat2.toLocaleString()); // 1/20/2024, 12:00:00 AM
+
+
+let myTimeStamp = Date.now();
+console.log(myTimeStamp); // 1718095581132 (millieconds passed since 01 jan 1970)
+
+console.log(myCreatedDate.getTime()); // 1705968000000
+
+console.log(Math.round(Date.now()/1000)); // 1718095739 (in seconds)
+
+let newDate = new Date();
+console.log(newDate); // 2024-06-11T08:49:47.165Z
+console.log(newDate.getMonth() + 1); // 6 (current month, added 1 because month strts with 0)
+console.log(newDate.getDay()); // 2
+
+
+// // we can do more customization in below way using localeString
+// newDate.toLocaleString("default", {
+//     weekday: "long",
+//     timeZone: "en-IN"
+// })
