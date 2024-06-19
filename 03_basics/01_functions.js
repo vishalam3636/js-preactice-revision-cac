@@ -82,3 +82,12 @@ function handleObject(anyObject){
 handleObject(user) // User name is Vishal and price is 199
 handleObject({username: "Battery", price:399})
 
+
+// a function that takes array and returns second value of array
+const myNewArray = [200, 400, 600, 500];
+
+function returnSecondValue(arr){
+    return arr[1];
+}
+console.log(returnSecondValue(myNewArray)); // 400
+
