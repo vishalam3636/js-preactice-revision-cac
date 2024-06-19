@@ -53,8 +53,32 @@ console.log(loginUserMessage()); // undefined
 
 
 
+//+++++++++++++++++++ FUNCTIONS WITH OBJECTS +++++++++++++++//
+// hume pata nahi ki kitni arguments aane wali hain, like add kret time hume pta tha ki 2 hi value aaa rhi hain. But in case hume nahi pta ki kitne arguments aane wale bhain, use case mein- 
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 800)); // 200, ab params pass krte jayenge to hume nahi pta ki kitne hain.
+
+
+// solution: rest operator, sare passed params ko bundle up kr dega
+function calculateCartPrice(...items){ 
+    return items
+}
+console.log(calculateCartPrice(200, 400, 500)); // [ 200, 400, 500 ]
 
 
 
+const user = {
+    username: "Vishal",
+    price: 199,
+    // prices: 199 
+}
 
+function handleObject(anyObject){
+    console.log(`User name is ${anyObject.username} and price is ${anyObject.price}`);
+}
+handleObject(user) // User name is Vishal and price is 199
+handleObject({username: "Battery", price:399})
 
