@@ -57,3 +57,50 @@ console.log(tinderUser.hasOwnProperty("isLoggedIn")); // true
 console.log(tinderUser.hasOwnProperty("loggedIn")); // false
 
 
+//++++++++++++++++++++++++++++ OBJECT DESTRUCTURING +++++++++++++++++++//
+const course = {
+  courseName: "JS in hindi",
+  price: "999",
+  courseInstructor: "Vishal"
+}
+
+console.log(course.courseName);
+console.log(course.price);
+console.log(course.courseInstructor);
+
+const {courseInstructor: instuctor} = course; // destructuring object
+// console.log(courseInstructor); // Vishal
+console.log(instuctor); // Vishal
+
+
+//== APIs Concept ==//
+// JSON structure (curly brackets mein , keys in string, API ke responses aise hi aate hain)
+
+// {
+//   "name": "Vishal",
+//   "courseName": "JS Practice",
+//   "price": "free"
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
